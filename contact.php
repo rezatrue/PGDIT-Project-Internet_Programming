@@ -15,7 +15,7 @@ include_once("header.php");
 	
     <?php
 
-	include_once("content_main.php");
+	include_once("contact_form.php");
 
 	?>  
 	  

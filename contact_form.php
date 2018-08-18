@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Contact Me form</title>
-	<link rel='stylesheet' href='style.css' type='text/css' />
-	 <script src="form_validator.js"></script> 
-</head>
 
-<body>
-
+<div id="content">
 <h1 style="text-align:center" >Contact Me</h1>
 
-<form name='contact' onSubmit="return verify();  ">
+<form id="con_form" name='contact' onSubmit="return verify();  ">
 	<ul>
 		<li><label for="username">Name:</label></li>
 		<li><input type="text" name="username" size="50" /><span id="errorUsernmaeMsg"></span></li>
@@ -24,5 +16,4 @@
 		<li><input type="submit" name="submit" value="Submit"  /></li>
 	</ul>
 </form>
-</body>
-</html>
+</div>
