@@ -3,40 +3,40 @@ function verify() {
 
             if (document.contact.username.value == "") {
                 document.contact.username.focus();
-				document.getElementById("errorUsernmaeMsg").innerHTML = "<img src='wrong.png' width='20px' height='20px' />";
+				document.getElementById("errorUsernmaeMsg").innerHTML = "<img src='images/wrong.png' width='20px' height='20px' />";
 				alert("Please give the username");
                 return false;
             }else{
-				document.getElementById("errorUsernmaeMsg").innerHTML = "<img src='right.png' width='20px' height='20px' />";
+				document.getElementById("errorUsernmaeMsg").innerHTML = "<img src='images/right.png' width='20px' height='20px' />";
 			}
 			
 			var emailtxt = contact.email.value;
 			
 			if(!validateEmail(emailtxt)){	
-				document.getElementById("errorEmailMsg").innerHTML = "<img src='wrong.png' width='20px' height='20px' />";
+				document.getElementById("errorEmailMsg").innerHTML = "<img src='images/wrong.png' width='20px' height='20px' />";
 				alert("Invalid Email address");
 				return false;
 			}else{
-				document.getElementById("errorEmailMsg").innerHTML = "<img src='right.png' width='20px' height='20px' />";
+				document.getElementById("errorEmailMsg").innerHTML = "<img src='images/right.png' width='20px' height='20px' />";
 			}
 		  
 			if (document.contact.subject.value == "") {
-				document.getElementById("errorSubjMsg").innerHTML = "<img src='wrong.png' width='20px' height='20px' />";
+				document.getElementById("errorSubjMsg").innerHTML = "<img src='images/wrong.png' width='20px' height='20px' />";
                 document.contact.subject.focus();
 				alert("Please give the subject");
                 return false;
             }else{
-				document.getElementById("errorSubjMsg").innerHTML = "<img src='right.png' width='20px' height='20px' />";
+				document.getElementById("errorSubjMsg").innerHTML = "<img src='images/right.png' width='20px' height='20px' />";
 			}
 			
 						
 			if (document.contact.msg.value == "") {
-				document.getElementById("errorMsgMsg").innerHTML = "<img src='wrong.png' width='20px' height='20px' />";
+				document.getElementById("errorMsgMsg").innerHTML = "<img src='images/wrong.png' width='20px' height='20px' />";
                 document.contact.msg.focus();
 				alert("Please write a Message");
                 return false;
             }else{
-				document.getElementById("errorMsgMsg").innerHTML = "<img src='right.png' width='20px' height='20px' />";
+				document.getElementById("errorMsgMsg").innerHTML = "<img src='images/right.png' width='20px' height='20px' />";
 			}
 			
           

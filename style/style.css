@@ -364,3 +364,8 @@ table tr td
 { background: #E5E5DB;
   color: #47433F;
   border-top: 1px solid #FFF;}
+  
+h3.cv_sub_hrading {
+	text-align: center;
+	font-weight: bold;
+}

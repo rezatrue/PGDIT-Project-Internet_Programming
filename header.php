@@ -15,20 +15,20 @@ session_start();
     <div id="header">
       <div id="logo">
         <div id="logo_text">
-          <h1><a href="index.html">Welcome this is <span class="logo_colour">Ali Ahmed Reza</span></a></h1>
+          <h1><a href="index.php">Welcome this is <span class="logo_colour">Ali Ahmed Reza</span></a></h1>
           <h2>If you wnat to know about me please procced on : thanks for your interest</h2>
         </div>
       </div>
       <div id="menubar">
         <ul id="menu">
-          <li class="selected"><a href="index.html">Home</a></li>
+          <li class="selected"><a href="index.php">Home</a></li>
           <li>
 		  <div class="dropdown">
 		  <a href="about.php" class="dropbtn" >about me</a>
 		  <div class="dropdown-content">
-			<a href="about.php">Personal Info</a>
-			<a href="about.php">Educational Info</a>
-			<a href="about.php">Work Info</a>
+			<a href="about.php#person_info">Personal Info</a>
+			<a href="about.php#educa_info">Educational Info</a>
+			<a href="about.php#work_exper">Work Info</a>
 		  </div>
 		  </div>
 		  </li>
