@@ -1,3 +1,33 @@
+function verifylogin() {
+			//for field must take some input
+			var usernametxt = login.username.value;
+			
+            if (usernametxt == "") {
+                document.login.username.focus();
+				document.getElementById("errorUsernmaeMsg").innerHTML = "<img src='images/wrong.png' width='20px' height='20px' />";
+				alert("username can't be empty");
+                return false;
+            }else{
+				document.getElementById("errorUsernmaeMsg").innerHTML = "<img src='images/right.png' width='20px' height='20px' />";
+			}
+			
+			var passtxt = login.pass.value;
+			
+            if (passtxt == "") {
+                document.login.pass.focus();
+				document.getElementById("errorPassMsg").innerHTML = "<img src='images/wrong.png' width='20px' height='20px' />";
+				alert("password can't be empty");
+                return false;
+            }else{
+				document.getElementById("errorPassMsg").innerHTML = "<img src='images/right.png' width='20px' height='20px' />";
+			}
+			
+			
+			return true;
+}
+
+
+
 function verify() {
 			//for field must take some input
 
