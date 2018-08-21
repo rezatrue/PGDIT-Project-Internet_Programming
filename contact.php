@@ -21,8 +21,7 @@ include_once("header.php");
 			$ema = $_REQUEST["email"];
 			$sub = $_REQUEST["subject"];
 			$msg = $_REQUEST["msg"];
-			//echo "First Name:" . $fn . "<br>";
-			//echo "Last Name:" . $ln ;
+			
 			
 			$cn = mysql_connect ("localhost","root","");
 			if ( !$cn)
@@ -31,7 +30,7 @@ include_once("header.php");
 			}
 			else
 			{
-				echo "connected to the server successfully";
+				//echo "connected to the server successfully";
 			}
 			
 			mysql_select_db("pgdit1815",$cn);
@@ -49,7 +48,7 @@ include_once("header.php");
 			}
 			else
 			{
-				echo "data inserted successfuly";
+				//echo "data inserted successfuly";
 			}
 			mysql_close($cn);
 

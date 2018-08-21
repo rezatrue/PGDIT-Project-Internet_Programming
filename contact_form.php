@@ -2,7 +2,7 @@
 <div id="content">
 <h1 style="text-align:center" >Contact Me</h1>
 
-<form id="con_form" name='contact' onSubmit="return verify();  action="contact_form.php" method="get"">
+<form id="con_form" name="contact" onSubmit="return verify()"  action="contact.php" method="get">
 	<ul>
 		<li><label for="username">Name:</label></li>
 		<li><input type="text" name="username" size="50" /><span id="errorUsernmaeMsg"></span></li>

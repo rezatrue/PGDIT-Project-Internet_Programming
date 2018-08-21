@@ -3,7 +3,7 @@
 
 <h1 style="text-align:center" >Admin Login</h1>
 
-<form id="con_form" name='login' onSubmit="return verifylogin(); action="admin.php" method="get"">
+<form id="con_form" name="login" onsubmit="return verifylogin()" action="admin.php" method="get">
 	<ul>
 		<li><label for="username">User Name:</label></li>
 		<li><input type="text" name="username" size="50" /><span id="errorUsernmaeMsg"></span></li>
