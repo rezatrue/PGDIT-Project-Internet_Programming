@@ -16,19 +16,11 @@ include_once("header.php");
 
 	<?php
 	
-	
 	if(isset($_REQUEST["username"]) && isset($_REQUEST["pass"]))
 	{
 		if($_REQUEST["username"] == "admin" && $_REQUEST["pass"] == "123")
 		{
 			$_SESSION["user"] = "admin";
-			//header('Location: userlist.php');
-			
-			echo "<h1 style="."text-align:center"." >Welcome Admin </h1>";
-
-			echo "<h1 style="."text-align:center"." ><a href="."contact_list.php"." >Contact List</a> </h1>";
-			
-			echo "<h2 style="."text-align:center"." ><a href="."signout.php"." > Sign out </a> </h2>";
 		}
 		else
 		{
@@ -37,10 +29,25 @@ include_once("header.php");
 		}
 		
 	}
-	else
-		{
-			include_once("admin_form.php");
-		}
+	
+	
+	if(!isset($_SESSION["user"])){
+		include_once("admin_form.php");
+	}
+	else {
+	
+	if($_SESSION["user"] == "admin"){
+		echo "<h1 style="."text-align:center"." >Welcome Admin </h1>";
+
+		echo "<h1 style="."text-align:center"." ><a href="."contact_list.php"." >Contact List</a> </h1>";
+			
+		echo "<h2 style="."text-align:center"." ><a href="."signout.php"." > Sign out </a> </h2>";
+		
+	}
+	
+	}
+	
+	
 		
 	?>
 	

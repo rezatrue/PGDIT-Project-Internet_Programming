@@ -15,7 +15,16 @@
           <div class="sidebar_item">
             <h3>Useful Links</h3>
             <ul>
-              <li><a href="login.php">Login</a></li>
+              <li>
+			  
+				<?php 
+				if(!isset($_SESSION["user"])){
+				echo "<a href='admin.php'>Login</a>";
+				}else{
+				echo "<a href='signout.php'>Signout</a>";
+				}
+				?>
+			  </li>
               <li><a href="contact_list.php">Contact List</a></li>
 			  <li><a href="about.php">How am I</a></li>
             </ul>

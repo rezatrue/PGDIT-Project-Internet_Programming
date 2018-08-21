@@ -16,14 +16,14 @@ include_once("header.php");
 
 	<?php
 	
-	
-	if(isset($_REQUEST["username"]) && isset($_REQUEST["pass"]))
-	{
-		if($_REQUEST["username"] == "admin" && $_REQUEST["pass"] == "123")
+	if(!isset($_SESSION["user"])){
+		header("Location: admin.php", true, 301);
+		exit();
+	}
+	else{
+		if($_SESSION["user"] == "admin")
 		{
-			$_SESSION["user"] = "admin";
-			//header('Location: userlist.php');
-			
+						
 			echo "<h2 style="."text-align:center"." >Welcome Admin here's contact list : ".
 			"<span style="."text-align:right"." ><a href="."signout.php"." > Sign out </a> </span></h2>";
 
@@ -56,26 +56,12 @@ include_once("header.php");
 			echo "</table>";
 			echo "</div>";
 			mysql_close($cn);
-			
-			
-			
-			
-			
-			
-			
-			
-		}
-		else
+				
+		}else
 		{
-			echo "<h6 style="."text-align:center;color:red"." >wrong user name or password</h6>";
 			include_once("admin_form.php");
 		}
-		
 	}
-	else
-		{
-			include_once("admin_form.php");
-		}
 		
 	?>
 	
