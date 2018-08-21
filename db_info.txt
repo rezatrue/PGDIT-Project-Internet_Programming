@@ -1,0 +1,14 @@
+DB name : pgdit1815
+user : root
+password : 
+
+create table contact_list (
+slno integer(25) PRIMARY KEY AUTO_INCREMENT,
+name varchar(25) NOT Null,
+email varchar(30) NOT Null,
+subject varchar(150) NOT Null,
+message varchar(500) NOT Null 
+);
+
+
+
